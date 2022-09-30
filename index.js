@@ -8,14 +8,13 @@ function getDate() {
   const minutes = now.getMinutes();
   const hours = now.getHours();
 
-  let secondsDegrees = (seconds / 60) * 360 + 90;
+  const secondsDegrees = (seconds / 60) * 360 + 90;
   const minutesDegrees = (minutes / 60) * 360 + 90;
   const hoursDegrees = (hours / 24) * 360 + 90;
 
   sec.style.transform = `rotate(${secondsDegrees}deg)`;
   min.style.transform = `rotate(${minutesDegrees}deg)`;
   hour.style.transform = `rotate(${hoursDegrees}deg)`;
- 
 }
 
 setInterval(getDate, 1000);

@@ -34,7 +34,7 @@ body {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: ease-in-out 0.7s; 
+    /* transition: ease-in-out 0.7s; */ 
 }
 .sechand {
     height: 3px;
